@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+        }
+        h1 {
+          font-family: 'Arial';
+          font-size: 300%;
+          margin: 20px;
+          color: dimgray;
+        }
+        h2 {
+          font-family: 'Arial';
+          font-size: 150%;
+          text-align: left;
+          margin: 20px;
+          color: dimgray;
+          font-weight: normal;
+        }
+
+        p {
+          font-family: 'Arial';
+          font-size: 100%;
+        }
+      
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* Five columns */
+          gap: 20px;
+          margin: 20px;
+          margin-bottom: 10px;
+          flex-grow: 1;
+
+        }
+
+        .nav, .footerbar {
+          margin: 20px;
+          background: white;
+          box-sizing: border-box;
+          overflow: hidden;
+          border-radius: 20px;
+          padding: 20px;
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+          justify-content: center;
+          display: flex;
+          width: calc(100% - 40px);
+          max-width: calc(100vw - 40px);
+        }
+
+        ul {
+          flex-grow: 0.03;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          font-family: 'Arial';
+          font-size: 100%;
+          display: flex;
+          gap: 50px; 
+        }
+
+        .navtext {
+          flex-grow: 1;
+          font-family: 'Verdana';
+          font-size: 100%;
+          gap: 50px; 
+          margin-left: 10px; 
+          font-weight: bold;
+          color: gray;
+        }
+
+        .a-nav {
+            color: gray;
+            text-decoration: none;
+            font-family: 'Arial';
+        }
+
+       .a-nav:hover {
+            color: black;
+            transition: 0.2s ease-in;
+        }
+
+        .swifter, .sage {
+           border-radius: 20px;
+           height: 100%;
+           padding: 20px;
+           box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+           overflow: hidden;
+           position: relative;
+           text-align: center;
+           box-sizing: border-box;
+           background-color: white;
+           animation: slideIn 1s ease-out; 
+        }
+
+        .title {
+          font-size: 200%;
+          text-align: left;
+        }
+
+        .subtitle {
+          font-size: 150%;
+          text-align: left;
+          font-weight: bold;
+          color: darkgray;
+        }
+      
+        }
+        footer {
+          font-family: 'Arial';
+          text-align: center;
+          font-weight: bold;
+          color: gray;
+        }
+
+        .swifter:hover,
+        .sage:hover{
+          transform: scale(1.04);
+          transition: transform 0.5s ease;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="nav">
+  <span class="navtext">samuel's space 🔥</span>
+  <ul>
+    <li><a href="index.html" class="a-nav">home</a></li>
+    <li><a href="projects.html" class="a-nav">projects</a></li>
+    <li><a href="https://drive.google.com/file/d/1XjOSp4F8r6kPvXl9vK8uk41bGxnH18is/view?usp=sharing" class="a-nav">resume</a></li>
+  </ul>
+</div>
+
+<div>
+  <br>
+  <h1>my projects</h1>
+</div>
+  
+<div class="grid-container">
+  <div class="swifter">
+    <h1 class="title">SwiftER (2024-Present)</h1>
+    <h2 class="subtitle">📂 Submitted @Ignition Hacks 2024</h2>
+    <h2>SwiftER is a webapp that allows users to view live hospital emergency wait room times in the GTA. Users are also able to complete pre-screenings before they get to the hospital, saving crucial time.</h2>
+    <iframe src="https://www.youtube.com/embed/wFc_nh3tcDA" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+  </div>
+  <div class="sage">
+    <h1 class="title">Sage (2024)</h1>
+    <h2 class="subtitle">🏆 Best Novice Hackathon @Steel City Hacks 2024</h2>
+    <h2>Sage is a discord bot that allows users to combat Seasonal Affective Disorder. Using a machine learning algorithm, Sage predicts whether or not a user may develop SAD, and provides advices based on relevant information.</h2>
+    <iframe src="https://www.youtube.com/embed/dCroCDpMsyw"></iframe>
+  </div>
+</div>
+  
+<footer class="footerbar">
+  haha funne XD
+</footer>
+
+</body>
+</html>

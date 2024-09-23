@@ -368,4 +368,12 @@
 </footer>
 
 </body>
+<script>
+  document.querySelectorAll('.about, .ec, .project, .honour').forEach(element => {
+      element.addEventListener('blur', () => {
+          element.querySelector('.background-image').style.filter = 'none';
+          element.querySelector('.background-image').style.transform = 'none';
+      });
+  });
+</script>
 </html>

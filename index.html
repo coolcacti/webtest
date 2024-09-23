@@ -123,21 +123,23 @@
 
 
 
-        .about:hover .background-image,
-        .ec:hover,
-        .project:hover .background-image,
-        .honour:hover .background-image {
-          filter: grayscale(75%);
-          transform: scale(1.04);
-          transition: transform 0.5s ease;
-      }
-        .about:hover,
-        .ec:hover,
-        .project:hover,
-        .honour:hover{
-          transform: scale(1.04);
-          transition: transform 0.5s ease;
+        .about:hover .background-image, .about:focus .background-image,
+        .ec:hover .background-image, .ec:focus .background-image,
+        .project:hover .background-image, .project:focus .background-image,
+        .honour:hover .background-image, .honour:focus .background-image {
+            filter: grayscale(75%);
+            transform: scale(1.04);
+            transition: transform 0.5s ease;
         }
+        
+        .about:hover, .about:focus,
+        .ec:hover, .ec:focus,
+        .project:hover, .project:focus,
+        .honour:hover, .honour:focus {
+            transform: scale(1.04);
+            transition: transform 0.5s ease;
+        }
+
 
 
         .ec {
@@ -152,10 +154,10 @@
             background-repeat: no-repeat; /* Prevents tiling */
         }
 
-        .ec:hover .ec-text,
-        .honour:hover .honour-text,
-        .project:hover .project-text,
-        .about:hover .about-text{
+        .about:hover .about-text, .about:focus .about-text,
+        .ec:hover .ec-text, .ec:focus .ec-text,
+        .project:hover .project-text, .project:focus .project-text,
+        .honour:hover .honour-text, .honour:focus .honour-text {
             opacity: 1;
         }
 
@@ -289,7 +291,7 @@
 </div>
 
 <div class="grid-container">
-  <div class="about">
+  <div class="about" tabindex="0">
     <div class="background-image"></div>
     <h1 id="home" class="box-title">about me</h1>
     <h2 class="about-text">Hi!<br><br> My name is Samuel and I'm a grade 12 student at St. Robert CHS. I'm always looking for opportunities within the realm of technology and business. <br><br> Feel free to reach out!<br><br>
@@ -297,7 +299,7 @@
     </h2>
   </div>
   
-  <div class="ec">
+  <div class="ec" tabindex="0">
     <div class="background-image"></div>
     <h1 id="home" class="box-title">ecs</h1>
     <h2 class="ec-text">
@@ -312,7 +314,7 @@
     </h2>
   </div>
 
-  <div class="project">
+  <div class="project" tabindex="0">
     <div class="background-image"></div>
     <h1 id="home" class="box-title">Projects</h1>
     <h2 class="project-text">
@@ -327,7 +329,7 @@
     </h2>
   </div>
   
-  <div class="honour">
+  <div class="honour" tabindex="0">
     <div class="background-image"></div>
     <h1 id="home" class="box-title">Honours</h1>
     <h2 class="honour-text">

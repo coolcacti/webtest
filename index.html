@@ -206,6 +206,13 @@
           z-index: 1;
         }
 
+        .about:blur .background-image, .ec:blur .background-image,
+        .project:blur .background-image, .honour:blur .background-image {
+            filter: none;
+            transform: none;
+            transition: transform 0.5s ease;
+        }
+        
         .a-email {
               color: #7ab4ff;
               font-family: 'Arial';
